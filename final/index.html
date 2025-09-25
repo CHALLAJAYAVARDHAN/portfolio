@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jayavardhan | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+      emailjs.init("pn8Ww9dUcYZWO4I5t");
+  })();
+</script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0b0f2c;
+            color: #d1d5db; /* Light gray text for contrast */
+        }
+        
+        .text-gradient-hero {
+            background-image: linear-gradient(to right, #4b5563, #6b7280, #9ca3af);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Subtle hover effect for skill icons */
+        .skill-icon-hover:hover {
+            transform: translateY(-8px) scale(1.1);
+            transition: all 0.3s ease-in-out;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+        }
+
+        /* Float animation for the profile image */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+        }
+        .float { animation: float 4s ease-in-out infinite; }
+    </style>
+</head>
+<body class="bg-blue-900 text-gray-200 scroll-smooth">
+
+    <nav class="flex justify-between items-center px-6 md:px-20 py-4 backdrop-blur-sm bg-blue-900/60 shadow-lg fixed w-full z-50">
+        <a href="#" class="text-2xl font-extrabold text-blue-400 tracking-wider">Jaya Vardhan</a>
+        <ul class="hidden md:flex space-x-8 text-lg font-medium">
+            <li><a href="#home" class="hover:text-blue-400 transition transform hover:-translate-y-1">Home</a></li>
+            <li><a href="#about" class="hover:text-blue-400 transition transform hover:-translate-y-1">About</a></li>
+            <li><a href="#skills" class="hover:text-blue-400 transition transform hover:-translate-y-1">Skills</a></li>
+            <li><a href="#projects" class="hover:text-blue-400 transition transform hover:-translate-y-1">Projects</a></li>
+            <li><a href="#contact" class="hover:text-blue-400 transition transform hover:-translate-y-1">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home" class="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-20 pt-28 pb-10 gap-10">
+            <div class="flex-1 text-center md:text-left animate-fade-in-up">
+                <p class="text-xl md:text-2xl text-blue-300 font-medium mb-3">Hello, I'm</p>
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight text-white">
+                    Jayavardhan
+                </h1>
+                <h2 class="text-2xl md:text-3xl font-light text-blue-200 mb-6">
+                    A Passionate <span class="font-semibold text-blue-400">Python Developer</span> & Web Enthusiast 🚀
+                </h2>
+
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4 mt-8">
+                    <a href="#contact" class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-3 rounded-full font-semibold shadow-xl hover:scale-105 hover:shadow-blue-500/50 transition duration-300">
+                        Hire Me
+                    </a>
+                    <a href="jay_resume_07.pdf" target="_blank" class="inline-block border border-blue-400 text-blue-400 px-8 py-3 rounded-full font-semibold hover:bg-blue-400 hover:text-white transition duration-300">
+                        Resume
+                    </a>
+                </div>
+
+                <div class="flex justify-center md:justify-start space-x-6 mt-10 text-3xl">
+                    <a href="https://www.linkedin.com/in/jayavardhan-challa-611282298/" target="_blank" class="hover:text-blue-400 transition transform hover:scale-110"><i data-feather="linkedin"></i></a>
+                    <a href="https://github.com/CHALLAJAYAVARDHAN" target="_blank" class="hover:text-gray-400 transition transform hover:scale-110"><i data-feather="github"></i></a>
+                    <a href="mailto:challajayavardhan70@gmail.com" class="hover:text-red-400 transition transform hover:scale-110"><i data-feather="mail"></i></a>
+                </div>
+            </div>
+            <div class="flex-1 flex justify-center mt-10 md:mt-0">
+                <img src="icon.jpg" width="450" alt="Jayavardhan Profile" class="rounded-full shadow-2xl float border-4 border-blue-600/50 hover:border-blue-400 transition duration-500">
+            </div>
+        </section>
+
+        <section id="about" class="py-20 md:py-32 px-6 md:px-20 text-center bg-blue-950">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-blue-400 tracking-wide">About Me</h2>
+            <div class="h-1 w-24 bg-blue-400 mx-auto mb-12 rounded-full"></div>
+            <p class="max-w-4xl mx-auto text-lg md:text-xl text-gray-400 leading-relaxed">
+                I'm a <span class="font-semibold text-white">Python Developer</span> with a knack for building robust, scalable web applications and backend systems. I have a passion for elegant design, efficient problem-solving, and bringing creative ideas to life. My journey is fueled by a desire to learn and contribute to projects that make a real impact.
+            </p>
+        </section>
+
+        <section id="skills" class="py-20 md:py-32 px-6 md:px-20 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-blue-400 tracking-wide">My Skills</h2>
+            <div class="h-1 w-24 bg-blue-400 mx-auto mb-12 rounded-full"></div>
+            <div class="grid grid-cols-3 md:grid-cols-5 gap-10 md:gap-16 max-w-5xl mx-auto">
+                <div class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-20 h-20 skill-icon-hover" alt="Python">
+                    <p class="mt-4 font-medium text-lg text-white">Python</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-20 h-20 skill-icon-hover" alt="JavaScript">
+                    <p class="mt-4 font-medium text-lg text-white">JavaScript</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-20 h-20 skill-icon-hover" alt="HTML5">
+                    <p class="mt-4 font-medium text-lg text-white">HTML5</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-20 h-20 skill-icon-hover" alt="CSS3">
+                    <p class="mt-4 font-medium text-lg text-white">CSS3</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" class="w-20 h-20 skill-icon-hover" alt="Tailwind CSS">
+                    <p class="mt-4 font-medium text-lg text-white">Tailwind</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-20 h-20 skill-icon-hover" alt="React">
+                    <p class="mt-4 font-medium text-lg text-white">React</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" class="w-20 h-20 skill-icon-hover" alt="Django">
+                    <p class="mt-4 font-medium text-lg text-white">Django</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" class="w-20 h-20 skill-icon-hover" alt="Flask">
+                    <p class="mt-4 font-medium text-lg text-white">Flask</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-20 h-20 skill-icon-hover" alt="MySQL">
+                    <p class="mt-4 font-medium text-lg text-white">MySQL</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="w-20 h-20 skill-icon-hover" alt="Git">
+                    <p class="mt-4 font-medium text-lg text-white">Git</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20 md:py-32 px-6 md:px-20 text-center bg-blue-950">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-blue-400 tracking-wide">My Projects</h2>
+            <div class="h-1 w-24 bg-blue-400 mx-auto mb-12 rounded-full"></div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-blue-800 p-8 rounded-2xl shadow-xl transition-transform hover:scale-105 duration-300 transform-gpu">
+                    <h3 class="text-2xl font-semibold mb-2 text-blue-200">E-commerce API</h3>
+                    <p class="text-gray-400 mb-4">A robust backend API for an e-commerce platform built with Django and Django REST Framework.</p>
+                    <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-200 transition">
+                        View Project <i data-feather="arrow-right" class="ml-2"></i>
+                    </a>
+                </div>
+                <div class="bg-blue-800 p-8 rounded-2xl shadow-xl transition-transform hover:scale-105 duration-300 transform-gpu">
+                    <h3 class="text-2xl font-semibold mb-2 text-blue-200">Personal Blog</h3>
+                    <p class="text-gray-400 mb-4">A full-stack blog application with user authentication and a rich text editor built using Flask and SQLAlchemy.</p>
+                    <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-200 transition">
+                        View Project <i data-feather="arrow-right" class="ml-2"></i>
+                    </a>
+                </div>
+                <div class="bg-blue-800 p-8 rounded-2xl shadow-xl transition-transform hover:scale-105 duration-300 transform-gpu">
+                    <h3 class="text-2xl font-semibold mb-2 text-blue-200">Task Manager App</h3>
+                    <p class="text-gray-400 mb-4">A modern task management application with a clean UI, developed with React and a Python backend.</p>
+                    <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-200 transition">
+                        View Project <i data-feather="arrow-right" class="ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 md:py-32 px-6 md:px-20 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-blue-400 tracking-wide">Get in Touch</h2>
+            <div class="h-1 w-24 bg-blue-400 mx-auto mb-12 rounded-full"></div>
+            <p class="max-w-xl mx-auto text-lg text-gray-400 mb-8">
+                I'm always open to new opportunities and collaborations. Feel free to reach out!
+            </p>
+            <div class="max-w-2xl w-full mx-auto p-8 rounded-2xl shadow-2xl bg-blue-900 border border-blue-800">
+                <form id="contact-form" class="space-y-6">
+                <div>
+                    <input type="text" name="from_name" placeholder="Your Name" class="w-full px-5 py-3 border-2 border-blue-700 rounded-lg bg-transparent text-white" required>
+                </div>
+                <div>
+                    <input type="email" name="from_email" placeholder="Your Email" class="w-full px-5 py-3 border-2 border-blue-700 rounded-lg bg-transparent text-white" required>
+                </div>
+                <div>
+                    <textarea name="message" placeholder="Your Message" rows="5" class="w-full px-5 py-3 border-2 border-blue-700 rounded-lg bg-transparent text-white" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 rounded-lg font-semibold shadow-lg hover:scale-[1.01] transition duration-300">
+                    Send Message
+                </button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+    
+    <footer class="text-center text-gray-400 py-6 mt-12 border-t border-blue-800">
+        <div class="flex justify-center space-x-6 mb-4 text-2xl">
+            <a href="https://www.linkedin.com/in/jayavardhan-challa-611282298/" target="_blank" class="hover:text-blue-400 transition"><i data-feather="linkedin"></i></a>
+            <a href="https://github.com/CHALLAJAYAVARDHAN" target="_blank" class="hover:text-gray-400 transition"><i data-feather="github"></i></a>
+            <a href="mailto:challajayavardhan70@gmail.com" class="hover:text-red-400 transition"><i data-feather="mail"></i></a>
+        </div>
+        <p class="text-sm">© 2025 Jayavardhan. All Rights Reserved.</p>
+    </footer>
+
+    <script>feather.replace()</script>
+    <script>
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm("service_xkhaabu", "template_jftz4t4", this)
+      .then(() => {
+        alert("✅ Message sent successfully!");
+        this.reset();
+      }, (error) => {
+        alert("❌ Failed to send message: " + JSON.stringify(error));
+      });
+  });
+</script>
+
+</body>
+</html>
